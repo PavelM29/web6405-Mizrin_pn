@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Регистрация</h1>
+        <p class="header__subtitle">Форма с выводом данных в консоль</p>
+    </header>
+
+    <nav class="nav">
+        <a href="main.html"  class="nav__link">Главная</a>
+        <a href="dop.html"   class="nav__link">Картинки</a>
+        <a href="table.html" class="nav__link">Сравнение</a>
+        <a href="form.html"  class="nav__link nav__link--active">Регистрация</a>
+    </nav>
+
+    <main class="content">
+        <h2 class="content__title">Создание аккаунта</h2>
+
+        <form class="form" id="registration-form" novalidate>
+            <div class="form__field">
+                <label for="login" class="form__label">Логин</label>
+                <input type="text" id="login" name="login"
+                       class="form__input" required minlength="3">
+            </div>
+
+            <div class="form__field">
+                <label for="password" class="form__label">Пароль</label>
+                <input type="password" id="password" name="password"
+                       class="form__input" required minlength="6">
+            </div>
+
+            <div class="form__field">
+                <label class="form__checkbox-wrap">
+                    <input type="checkbox" id="agreement" name="agreement"
+                           class="form__checkbox" required>
+                    <span class="form__checkbox-label">
+                        Согласен на обработку персональных данных
+                    </span>
+                </label>
+            </div>
+
+            <button type="submit" class="form__submit">Отправить на сервер</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; Данные выводятся только в консоль</p>
+    </footer>
+</body>
+</html>
